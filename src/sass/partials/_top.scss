@@ -1,0 +1,29 @@
+.top {
+  background-image: url('../i/top.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.clock {
+  float: right;
+
+  p {
+    margin: 0;
+  }
+
+  .date {
+    color: $light-grey;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    font-weight: 100;
+    float: right;
+    clear: both;
+  }
+
+  .time {
+    font-size: 3.7em;
+    font-weight: 100;
+    float: right;
+    clear: both;
+  }
+}

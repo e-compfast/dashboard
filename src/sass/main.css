@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+.top {
+  background-image: url("../i/top.jpg");
+  background-size: cover;
+  height: 100vh; }
+
+.clock {
+  float: right; }
+  .clock p {
+    margin: 0; }
+  .clock .date {
+    color: #f1f1f1;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    font-weight: 100;
+    float: right;
+    clear: both; }
+  .clock .time {
+    font-size: 3.7em;
+    font-weight: 100;
+    float: right;
+    clear: both; }
+
+.news {
+  background-color: #f1f1f1; }
+  .news h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center; }
+
+.feed {
+  color: #000; }
+  .feed .news-item {
+    padding: 20px; }
+  .feed h3 {
+    text-transform: uppercase; }
+  .feed img {
+    max-width: 300px; }
+  .feed .break {
+    width: 90%;
+    border-bottom: 1px dotted #000; }
+
+body {
+  background-color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0; }
+
+p {
+  color: #fff; }
+
+section {
+  padding: 3em; }
+
+/*# sourceMappingURL=main.css.map */

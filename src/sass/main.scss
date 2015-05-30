@@ -1,0 +1,19 @@
+@import "colors";
+@import "fonts";
+@import "partials/top";
+@import "partials/news";
+
+body {
+  background-color: $black;
+  font-family: $opensans;
+  font-size: 16px;
+  margin: 0;
+}
+
+p {
+  color: $white;
+}
+
+section {
+  padding: 3em;
+}
