@@ -2,9 +2,10 @@ define(function (require, exports, module) {
     var viewModel,
         ko = require('knockout'),
         clock = require('js/core/clock'),
-        news = require('js/core/news');
+        news = require('js/core/news'),
+        weather = require('js/core/weather');
 
-    viewModel = function (ko, clock, news) {
+    viewModel = function (ko, clock, news, weather) {
         var self = this,
             itemCount = 0;
 
@@ -34,10 +35,11 @@ define(function (require, exports, module) {
             }
         }
 
-        news.success(function (data) {
-            setNewsItems(data.responseData.feed.entries, 5);
+        news.getNews().success(function (data) {
+            setNewsItems(data.responseData.feed.entries, 10);
         });
+
     };
 
-    exports.viewmodel = viewModel(ko, clock, news);
+    exports.viewmodel = viewModel(ko, clock, news, weather);
 });

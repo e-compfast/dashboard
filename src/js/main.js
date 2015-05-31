@@ -5,11 +5,10 @@ require.config({
         jquery: '../bower_components/jquery/dist/jquery',
         knockout: '../bower_components/knockout/dist/knockout',
         moment: '../bower_components/moment/moment',
-        viewmodel: 'js/viewmodel/viewmodel',
-        weather: 'js/core/weather'
+        viewmodel: 'js/viewmodel/viewmodel'
     }
 });
 
-require(['viewmodel', 'knockout', 'weather'], function (vm, ko, w) {
+require(['viewmodel', 'knockout'], function (vm, ko) {
     ko.applyBindings(vm);
 });
